@@ -910,6 +910,7 @@ img {
     margin-top: 120px;
 }
 
+
 .new-chair {
     display: flex;
     flex-wrap: wrap;
@@ -924,78 +925,327 @@ img {
     color: #303032;
     text-transform: uppercase;
     position: relative;
-  }
-  
-  .new::before {
+}
+
+.new::before {
     content: '';
     width: 90px;
     height: 4px;
     background-color: #303032;
     position: absolute;
     top: 50px;
-  }
-  
-  .chair-twilight img {
+}
+
+.chair-twilight img {
     width: 175px;
     margin-bottom: 10px;
     padding-top: 20px;
-  }
-  
-  .chair-twilight,
-  .chandelier,
-  .table {
-    width: 270px;
+}
+
+.chair-twilight,
+.chandelier,
+.table {
+    min-width: 270px;
     background-color: #fff;
     text-align: center;
     color: #303032;
     margin-bottom: 37px;
-  }
-  
-  .name {
+    padding-bottom: 16px;
+}
+
+.chair-twilight {
+    margin-top: 0px;
+}
+
+.name {
     font-size: 20px;
     line-height: 27px;
     display: block;
     text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .price {
+}
+
+.price {
     font-weight: 600;
     font-size: 28px;
     line-height: 38px;
-  }
-  
-  .chandelier img {
-    width: 202px;
-    height: 198px;
-  }
+}
 
-  .table:hover,
-  .chandelier:hover,
-  .chair-twilight:hover,
-  .chair-white:hover {
+.chandelier img {
+    width: 202px;
+}
+
+.table:hover,
+.chandelier:hover,
+.chair-twilight:hover,
+.chair-white:hover {
     background-color: #FAECE9;
-  }
-  
-  .table img {
-    width: inherit;
+}
+
+.table img {
+    width: 270px;
     height: 198px;
-  }
-  
-  .new-chair {
+}
+
+.new-chair {
     max-width: 570px;
-  }
-  
-  .chair-white {
+}
+
+.chair-white {
     width: 570px;
     max-height: 614px;
     text-align: center;
     background-color: #fff;
-  }
-  
-  .chair-white img {
+}
+
+.chair-white img {
     width: 490px;
     height: 466px;
     padding-top: 19px;
     padding-bottom: 29px;
-  }
+}
+
+.mt-28 {
+    margin-top: 28px;
+}
+
+
+
+
+@media (max-width:1024px) {
+    .novelties {
+        margin-top: 100px;
+    }
+
+    .new-chair {
+        max-width: 500px;
+    }
+
+    .chair-twilight {
+        min-width: 258px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .chandelier {
+        min-width: 224px;
+        height: auto;
+    }
+
+    .chandelier img {
+        max-width: 192px;
+        height: auto;
+        padding: 0 20px 0 20px;
+    }
+
+    .table {
+        min-width: 250px;
+        height: auto;
+    }
+
+    .table img {
+        max-width: 258px;
+        height: auto;
+    }
+
+    .chair-white {
+        max-width: 464px;
+        margin-left: 20px;
+    }
+
+    .chair-white img {
+        max-width: 410px;
+        height: auto;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:769px) {
+    .novelties {
+        margin-top: 80px;
+    }
+
+    .new-chair {
+        flex-basis: 50%;
+    }
+
+    .new {
+        font-size: 24px;
+    }
+
+    .new::before {
+        width: 80px;
+        height: 4px;
+        top: 40px;
+    }
+
+    .chair-twilight {
+        min-width: 178px;
+        margin-bottom: 10px;
+    }
+
+    .chair-twilight img {
+        max-width: 144px;
+    }
+
+    .chandelier {
+        min-width: 176px;
+        margin-bottom: 0;
+    }
+
+    .chandelier img {
+        max-width: 134px;
+        padding: 0 20px 0 20px;
+    }
+
+    .table {
+        min-width: 106px;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .table img {
+        max-width: 178px;
+    }
+
+    .chair-white {
+        max-width: 354px;
+        margin-left: 10px;
+    }
+
+    .chair-white img {
+        max-width: 320px;
+        height: auto;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:426px) {
+    .new {
+        font-size: 26px;
+    }
+
+    .new::before {
+        width: 90px;
+        height: 4px;
+        top: 40px;
+    }
+
+    .novelties {
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .chair-twilight img {
+        min-width: 304px;
+        height: auto;
+    }
+
+    .chair-twilight {
+        margin-top: 30px;
+        padding: 40px;
+        min-width: 305px;
+        margin-bottom: 37px;
+    }
+
+    .chandelier {
+        padding: 0 40px 40px 40px;
+        min-width: 305px;
+    }
+
+    .chandelier img {
+        min-width: 265px;
+        height: auto;
+        margin-bottom: 6px;
+    }
+
+    .table {
+        padding: 40px;
+        min-width: 305px;
+    }
+
+    .table img {
+        min-width: 300px;
+        height: auto;
+    }
+
+    .chair-white {
+        padding: 40px;
+        min-width: 305px;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .name {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .price {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:376px) {
+    .novelties {
+        width: 100%;
+        min-height: auto;
+        margin-top: 60px;
+    }
+
+    .new {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:320px) {
+    .new {
+        margin-left: 44px;
+    }
+
+    .chair-twilight img {
+        min-width: 270px;
+        height: auto;
+    }
+
+    .chair-twilight {
+        margin-top: 20px;
+        padding: 0 40px 20px 40px;
+    }
+
+    .chair-twilight,
+    .chandelier,
+    .table {
+        margin-bottom: 15px;
+    }
+
+    .chandelier {
+    padding: 0 20px 20px 40px;
+    }
+
+    .table {
+        padding: 0 20px 20px 40px;
+    }
+
+    .chair-white {
+        padding: 0 40px 20px 40px;
+    }
+
+    .price {
+        font-size: 26px;
+    }
+
+}

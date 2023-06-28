@@ -1283,6 +1283,7 @@ img {
     font-family: Open Sans, "Arial", sans-serif;
     font-style: italic;
     line-height: 154.358%;
+    font-weight: 400;
     margin-top: 20px;
 }
 
@@ -1348,6 +1349,11 @@ img {
     color: #2D2D2D;
 }
 
+.review-slider .swiper-button-prev:hover,
+.review-slider .swiper-button-next:hover {
+    background-color: #FAECE9;
+}
+
 .review-slider .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
@@ -1355,10 +1361,35 @@ img {
     background-color: #fff;
     border: 2px solid black;
     opacity: 0.2;
-    top: 30;
 }
 
 .review-slider .swiper-pagination-bullet-active {
     opacity: 0.2;
     background-color: black;
-  }
+}
+
+
+@media (max-width:768px) {
+    .main-avatar {
+        margin-top: 80px;
+    }
+
+    .review-slider {
+        position: relative;
+        margin-bottom: 80px;
+    }
+
+    .review-slider .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+        margin-right: 6px;
+    }
+
+
+    @media (max-width:426px) {
+        .review-slider {
+            display: none;
+        }
+    }
+
+}

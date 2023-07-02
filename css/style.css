@@ -1004,13 +1004,6 @@ img {
     padding-bottom: 29px;
 }
 
-.mt-28 {
-    margin-top: 28px;
-}
-
-
-
-
 @media (max-width:1024px) {
     .novelties {
         margin-top: 100px;
@@ -1187,6 +1180,7 @@ img {
         min-width: 305px;
         height: auto;
         margin-left: 0;
+        margin-bottom: 50px;
     }
 
     .name {
@@ -1303,7 +1297,7 @@ img {
 
 .review-slider {
     position: relative;
-    margin-bottom: 120px;
+    margin-bottom: 220px;
 }
 
 .review__slider-pagination {
@@ -1376,7 +1370,7 @@ img {
 
     .review-slider {
         position: relative;
-        margin-bottom: 80px;
+        margin-bottom: 100px;
     }
 
     .review-slider .swiper-pagination-bullet {
@@ -1391,5 +1385,326 @@ img {
             display: none;
         }
     }
+}
 
+
+/* Последний шанс */
+.last-change {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.last-change::before {
+    content: "";
+    position: absolute;
+    height: 545px;
+    width: 200%;
+    top: -70px;
+    right: 44%;
+    background-color: #fceae8;
+    z-index: -1;
+}
+
+.change {
+    color: #303032;
+    font-size: 28px;
+    font-family: "Playfair Display", "Georgia", serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    position: relative;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.change::before {
+    content: '';
+    width: 90px;
+    height: 4px;
+    background-color: #303032;
+    position: absolute;
+    top: 50px;
+}
+
+/*табы */
+.tabs-list {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 31px;
+}
+
+.tabs-content {
+    display: none;
+}
+
+.tabs-content__active {
+    display: block;
+}
+
+.tabs-btn {
+    color: rgba(0, 0, 0, 0.40);
+    text-align: center;
+    font-size: 16px;
+    font-family: Open Sans, "Arial", sans-serif;
+    font-weight: 600;
+    line-height: 153.885%;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    margin-right: 49px;
+}
+
+.tabs-btn__active {
+    color: #000;
+    text-decoration-line: underline;
+    border: 0;
+    background-color: transparent;
+}
+
+.chair-wrapper {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.content {
+    min-width: 210px;
+    min-height: 355px;
+    padding: 30px 0 0 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(56, 54, 53, 0.20);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.content h3 {
+    font-size: 16px;
+    font-family: Open Sans, "Arial", sans-serif;
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+
+.new-price {
+    color: #979798;
+    font-weight: 600;
+    text-decoration: line-through;
+    display: inline-flex;
+}
+
+.old-price {
+    color: #303032;
+    font-size: 28px;
+    font-weight: 600;
+    margin-right: 11px;
+    display: inline-flex;
+}
+
+.content img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 268px;
+}
+
+.item-line::before {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: 5px;
+    background-color: #303032;
+    top: -4px;
+    left: 0px;
+    display: none;
+    width: 209px;
+}
+
+.content:hover .item-line::before {
+    display: block;
+}
+
+.change__button {
+    position: absolute;
+    left: 0px;
+    bottom: -48px;
+    width: 210px;
+    padding: 18px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #303032;
+    border: 0;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+
+.content:hover .change__button {
+    display: block;
+}
+
+.armchairs {
+    height: 400px;
+}
+
+@media (max-width:1024px) {
+    .chair-wrapper {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .content {
+        min-width: 290px;
+        min-height: 355px;
+        margin-left: 7px;
+        margin-bottom: 82px;
+    }
+
+    .item-line::before {
+        width: 290px;
+    }
+
+    .change__button {
+        width: 290px;
+    }
+}
+
+@media (max-width:768px) {
+    .last-change::before {
+        height: 850px;
+    }
+
+    .content {
+        min-width: 204px;
+        min-height: 359px;
+        margin-left: 7px;
+    }
+
+    .item-line::before {
+        width: 204px;
+    }
+
+    .change__button {
+        width: 204px;
+    }
+}
+
+@media (max-width:426px) {
+    .content {
+        min-width: 310px;
+    }
+
+    .change__button {
+        width: 310px;
+    }
+
+    .item-line::before {
+        width: 310px;
+    }
+
+    .change {
+        font-size: 24px;
+    }
+
+    .change::before {
+        width: 90px;
+        height: 4px;
+        top: 40px;
+    }
+
+    .last-change::before {
+        top: -28px;
+        right: 24%;
+    }
+
+    .tabs-btn {
+        margin-right: 30px;
+    }
+
+    .content {
+        margin-left: 44px;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width:376px) {
+    .change {
+        font-size: 20px;
+        margin-bottom: 34px;
+    }
+
+    .change::before {
+        width: 72px;
+        height: 3px;
+        top: 32px;
+    }
+
+    .tabs-btn {
+        font-size: 14px;
+        margin-right: 26px;
+    }
+
+    .tabs-list {
+        margin-bottom: 26px;
+    }
+
+    .content {
+        margin-left: 17px;
+        margin-bottom: 68px;
+    }
+
+    .last-change::before {
+        height: 476px;
+    }
+}
+
+@media (max-width:320px) {
+    .last-change::before {
+        right: 0%;
+        height: 2280px;
+    }
+
+
+.change {
+    font-size: 24px;
+    margin-bottom: 52px;
+}
+
+.change::before {
+    width: 95px;
+    height: 5;
+    top: 44px;
+}
+
+.tabs-btn {
+    font-size: 16px;
+    margin-right: 38px;
+}
+
+.content {
+    min-width: 258px;
+    min-height: 354px;
+    margin-left: 18px;
+}
+
+.item-line::before {
+    width: 258px;
+}
+
+.change__button {
+    width: 258px;
+}
+}
+
+
+
+/* атомарные классы */
+.mt-28 {
+    margin-top: 28px;
+}
+
+.mr31 {
+    margin-right: 31px;
 }

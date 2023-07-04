@@ -30,6 +30,19 @@
     src: url("../fonts/playfair-display-bold.woff2") format("woff2"), url("../fonts/playfair-display-bold.woff") format("woff");
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
 .container,
 body {
     box-sizing: border-box;
@@ -763,7 +776,6 @@ img {
 
     .product--slider .product__info {
         width: auto;
-        margin-left: 124px;
     }
 
     .product--slider .product__info h2 {

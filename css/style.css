@@ -982,7 +982,7 @@ img {
 
 .table img {
     width: 270px;
-    height: 198px;
+    height: 224px;
 }
 
 .new-chair {
@@ -991,7 +991,7 @@ img {
 
 .chair-white {
     width: 570px;
-    max-height: 630px;
+    max-height: 712px;
     text-align: center;
     background-color: #fff;
 }
@@ -999,7 +999,7 @@ img {
 .chair-white img {
     width: 490px;
     height: 466px;
-    padding-top: 19px;
+    padding-top: 44px;
     padding-bottom: 29px;
 }
 
@@ -1035,13 +1035,15 @@ img {
     }
 
     .table img {
-        max-width: 258px;
+        max-width: 200px;
         height: auto;
+        margin-bottom: 24px;
     }
 
     .chair-white {
         max-width: 464px;
         margin-left: 20px;
+        max-height: 654px;
     }
 
     .chair-white img {
@@ -1282,7 +1284,7 @@ img {
 
 
 /* Слайдер отзывы */
-.swiper-slide {
+.slide-position {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -981,8 +981,9 @@ img {
 }
 
 .table img {
-    width: 270px;
-    height: 224px;
+    width: 250px;
+    height: 206px;
+    margin-bottom: 20px;
 }
 
 .new-chair {
@@ -991,7 +992,7 @@ img {
 
 .chair-white {
     width: 570px;
-    max-height: 712px;
+    max-height: 632px;
     text-align: center;
     background-color: #fff;
 }
@@ -999,7 +1000,7 @@ img {
 .chair-white img {
     width: 490px;
     height: 466px;
-    padding-top: 44px;
+    padding-top: 20px;
     padding-bottom: 29px;
 }
 
@@ -1035,15 +1036,15 @@ img {
     }
 
     .table img {
-        max-width: 200px;
+        max-width: 238px;
         height: auto;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
 
     .chair-white {
         max-width: 464px;
         margin-left: 20px;
-        max-height: 654px;
+        max-height: 604px;
     }
 
     .chair-white img {
@@ -1181,7 +1182,7 @@ img {
         min-width: 305px;
         height: auto;
         margin-left: 0;
-        margin-bottom: 50px;
+        margin-bottom: 120px;
     }
 
     .name {
@@ -1702,10 +1703,6 @@ img {
 
 
 /* атомарные классы */
-.mt-28 {
-    margin-top: 28px;
-}
-
 .mr31 {
     margin-right: 31px;
 }

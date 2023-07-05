@@ -1283,13 +1283,6 @@ img {
 
 
 /* Слайдер отзывы */
-.swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
 .swiper-scrollbar {
     position: relative;
     text-align: center;
